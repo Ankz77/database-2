@@ -1,0 +1,12 @@
+sqlite> .mode csv
+sqlite> .import "restaurant.csv" tab1
+sqlite> .schema
+CREATE TABLE customer(id INTEGER, name TEXT, table_no INTEGER, order_to_go TEXT, PRIMARY KEY(id));
+CREATE TABLE waiter(id INTEGER PRIMARY KEY, waiters TEXT, customer_id INTEGER, FOREIGN KEY(customer_id) REFERENCES customer(id));
+CREATE TABLE food(id INTEGER PRIMARY KEY,cook TEXT, meal TEXT, drink TEXT, amount INTEGER, waiters_id INTEGER, FOREIGN KEY(waiters_id) REFERENCES waiter(id));
+CREATE TABLE link(customer_id INTEGER, cook_id INTEGER, waiters_id INTEGER, FOREIGN KEY(customer_id) REFERENCES customer(id), FOREIGN KEY(waiters_id) REFERENCES waiter(id), FOREIGN KEY(cook_id) REFERENCES food(id));
+CREATE TABLE IF NOT EXISTS "tab1"(
+"id" TEXT, "customer" TEXT, "table_no" TEXT, "waiters_id" TEXT,
+ "waiters" TEXT, "order_to_go" TEXT, "cook_id" TEXT, "cook" TEXT,
+ "meal" TEXT, "drink" TEXT, "amount" TEXT);
+sqlite>

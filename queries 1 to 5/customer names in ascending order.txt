@@ -1,0 +1,26 @@
+sqlite> SELECT id,name FROM customer ORDER BY UPPER(name);
+24|ainebyoona
+2|allan
+22|apio
+13|atukunda
+1|austin
+11|bosco
+10|dave
+19|dickson
+5|eunice
+4|gabriel
+14|herbert
+27|jayden
+3|kelly
+6|linda
+20|matovu
+7|michael
+25|mutebi
+8|nicholas
+23|okello
+30|oscar
+16|pierre
+17|racheal
+9|reagan
+26|samuel
+21|yoweri

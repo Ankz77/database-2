@@ -1,0 +1,30 @@
+CREATE TABLE customer(id INTEGER, name TEXT, table_no INTEGER, order_to_go TEXT, PRIMARY KEY(id));
+CREATE TABLE waiter(id INTEGER PRIMARY KEY, waiters TEXT, customer_id INTEGER, FOREIGN KEY(customer_id) REFERENCES customer(id));
+CREATE TABLE food(id INTEGER PRIMARY KEY,cook TEXT, meal TEXT, drink TEXT, amount INTEGER, waiters_id INTEGER, FOREIGN KEY(waiters_id) REFERENCES waiter(id));
+CREATE TABLE link(customer_id INTEGER, cook_id INTEGER, waiters_id INTEGER, FOREIGN KEY(customer_id) REFERENCES customer(id), FOREIGN KEY(waiters_id) REFERENCES waiter(id), FOREIGN KEY(cook_id) REFERENCES food(id));
+sqlite> SELECT * FROM waiter;
+1|walter|
+2|timothy|
+3|eric|
+4|karin|
+5|george|
+6|opio|
+7|grace|
+8|okello|
+9|jimmy|
+10|walter|
+11|karin|
+12|karin|
+13|walter|
+14|okello|
+15|karin|
+16|jimmy|
+17|timothy|
+18|grace|
+19|grace|
+20|okello|
+21|jimmy|
+22|timothy|
+23|timothy|
+24|jimmy|
+25|okello|

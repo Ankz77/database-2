@@ -1,0 +1,32 @@
+sqlite> .open restaurant_db.db
+sqlite> .schema
+CREATE TABLE customer(id INTEGER, name TEXT, table_no INTEGER, order_to_go TEXT, PRIMARY KEY(id));
+CREATE TABLE waiter(id INTEGER PRIMARY KEY, waiters TEXT, customer_id INTEGER, FOREIGN KEY(customer_id) REFERENCES customer(id));
+CREATE TABLE cock(id INTEGER PRIMARY KEY,cock TEXT, meal TEXT, drink TEXT, waiters_id INTEGER, FOREIGN KEY(waiters_id) REFERENCES waiter(id));
+CREATE TABLE food_order(cock_id INTEGER, amount INTEGER, FOREIGN KEY(cock_id) REFERENCES cock(id));
+sqlite> SELECT name FROM customer;
+austin
+allan
+kelly
+gabriel
+eunice
+linda
+michael
+nicholas
+reagan
+dave
+bosco
+atukunda
+herbert
+pierre
+racheal
+dickson
+matovu
+yoweri
+apio
+okello
+ainebyoona
+mutebi
+samuel
+jayden
+oscar

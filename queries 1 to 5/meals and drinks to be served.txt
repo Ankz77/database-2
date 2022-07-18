@@ -1,0 +1,26 @@
+sqlite> SELECT meal,drink FROM food;
+chips, whole grilled fish, salad|fanta
+fried eggs, beacon|tea
+muchomo|coca cola
+pizza|pepsi
+fish fillet, millet bread|fanta
+fried chicken, beef burger, chips|coca cola
+sausage, breadroll|coffee
+salad, vegetable soup, chicken pilau|fanta
+string beans, beef pilau, cassava|water
+bbq beef, chilli sauce|coca cola
+boiled eggs, chapati, samosa|mirinda
+null|fanta, coca cola
+pizza, beef burger|coca cola
+chicken stew, muchomo|monutain dew
+beef pilau, sausage, chicken stew|mango juice
+pizza, salad|pepsi
+pizza, whole grilled fish, fried chicken|mango juice
+null|mango juice, fanta
+chips, whole grilled fish, salad|mirinda
+posho, cassava, strings, beef stew|null
+cassava, chicken stew, millet|null
+breadroll, scrambled eggs, boiled eggs|tea, coffee
+boiled eggs, chapati, samosa|coca cola
+chicken stew, muchomo, pilau rice|coca cola
+pizza, chips, fried chicken|fanta

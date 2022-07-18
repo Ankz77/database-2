@@ -1,0 +1,4 @@
+sqlite> SELECT meal FROM tab1 WHERE customer LIKE "%jayden%";
+"pizza, chips, fried chicken"
+sqlite> SELECT * FROM tab1 WHERE id = "2";
+2,allan,3,1050,walter,yes,1060,ethan,"bbq beef, chilli sauce","coca cola",30000

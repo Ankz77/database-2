@@ -1,0 +1,27 @@
+CREATE TABLE link(customer_id INTEGER, cook_id INTEGER, waiters_id INTEGER, FOREIGN KEY(customer_id) REFERENCES customer(id), FOREIGN KEY(waiters_id) REFERENCES waiter(id), FOREIGN KEY(cook_id) REFERENCES food(id));
+sqlite> SELECT * FROM food;
+1|ethan|chips, whole grilled fish, salad|fanta|50000|
+2|ezekiel|fried eggs, beacon|tea|15000|
+3|jerry|muchomo|coca cola|5500|
+4|terry|pizza|pepsi|14000|
+5|martha|fish fillet, millet bread|fanta|45000|
+6|mary|fried chicken, beef burger, chips|coca cola|55000|
+7|sarah|sausage, breadroll|coffee|41000|
+8|robin|salad, vegetable soup, chicken pilau|fanta|76000|
+9|robin|string beans, beef pilau, cassava|water|46000|
+10|ethan|bbq beef, chilli sauce|coca cola|30000|
+11|jerry|boiled eggs, chapati, samosa|mirinda|11000|
+12|martha|null|fanta, coca cola|4000|
+13|ethan|pizza, beef burger|coca cola|19000|
+14|mary|chicken stew, muchomo|monutain dew|21000|
+15|ezekiel|beef pilau, sausage, chicken stew|mango juice|51000|
+16|terry|pizza, salad|pepsi|29000|
+17|robin|pizza, whole grilled fish, fried chicken|mango juice|53000|
+18|ezekiah|null|mango juice, fanta|5000|
+19|martha|chips, whole grilled fish, salad|mirinda|48000|
+20|sarah|posho, cassava, strings, beef stew|null|43000|
+21|sarah|cassava, chicken stew, millet|null|50000|
+22|robin|breadroll, scrambled eggs, boiled eggs|tea, coffee|18000|
+23|ethan|boiled eggs, chapati, samosa|coca cola|51000|
+24|jerry|chicken stew, muchomo, pilau rice|coca cola|47000|
+25|martha|pizza, chips, fried chicken|fanta|43000|
