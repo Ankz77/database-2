@@ -1,4 +1,3 @@
-sqlite> .mode csv
 sqlite> .import "restaurant.csv" tab1
 sqlite> .schema
 CREATE TABLE customer(id INTEGER, name TEXT, table_no INTEGER, order_to_go TEXT, PRIMARY KEY(id));
